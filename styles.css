@@ -7,7 +7,7 @@
  */
 
 * {
-    font-family:monospace;
+    font-family:monospace!important;
 }
 
 body {
@@ -15,22 +15,36 @@ body {
     color:#87805E!important;
 }
 
+button {
+    padding: 0;
+    border: none;
+    background-color: inherit;
+}
+
 .home {
     display:grid;
-    align-items:center;
-    justify-content:center;
+    gap: 1.5rem;
+    align-content:center;
+    justify-items:center;
 }
 
 .personal {
     text-align: center;
 }
-/*
-.card,
-mark {
-    background-color: #171010!important;
-}
-*/
+
 .card {
     border: 2px solid #423F3E!important;
     background-color: #171010!important;
+}
+
+.terminal {
+    width: 50%;
+}
+
+.redirect {
+    color: #6197cd;
+}
+
+.content { 
+    width: 75%;
 }
