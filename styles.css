@@ -1,0 +1,36 @@
+/*
+ * Colores:
+ * #362222 PRINCIPAL
+ * #171010 SECUNDARIO
+ * #423F3E TERCIARIO
+ * #2B2B2B CUATERNARIO
+ */
+
+* {
+    font-family:monospace;
+}
+
+body {
+    background-color:#362222!important;
+    color:#87805E!important;
+}
+
+.home {
+    display:grid;
+    align-items:center;
+    justify-content:center;
+}
+
+.personal {
+    text-align: center;
+}
+/*
+.card,
+mark {
+    background-color: #171010!important;
+}
+*/
+.card {
+    border: 2px solid #423F3E!important;
+    background-color: #171010!important;
+}
