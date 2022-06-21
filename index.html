@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
         <!-- Bootstrap Icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
         <!-- Bootstrap CSS -->
@@ -26,33 +27,31 @@
                 <div class="output container">
                     <div class="row row-cols-auto">
                         <div class="col">
-                            <button>
+                            <button id="goto-about-me">
                                 <p class="redirect">About me</p>
                             </button>
                         </div>
                         <div class="col">
-                            <button>
+                            <button id="goto-skills">
                                 <p class="redirect">Skills</p>
                             </button>
                         </div>                       
                         <div class="col">
-                            <button>
+                            <button id="goto-projects">
                                 <p class="redirect">Projects</p>   
                             </button>
                         </div>
                     </div>
                 </div>
             </div> 
-            <div class="content card rounded p-4" id="about-me">
-                <p>
-    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod     tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At     vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,     no sea takimata sanctus est Lorem ipsum dolor sit amet.
-    </p>
+            <div id="about-me" class="content card rounded p-4">
+                <p> This is About me</p>
             </div>
-            <div class="content card rounded p-4" id="skills">
-                
+            <div id="skills" class="content card rounded p-4">
+                <p> This is my Skills</p>
             </div>
-            <div class="content card rounded p-4" id="projects">
-                
+            <div id="projects" class="content card rounded p-4">
+                <p> This is my Projects</p>
             </div>
         </div>
     </body>

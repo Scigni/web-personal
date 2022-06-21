@@ -47,4 +47,5 @@ button {
 
 .content { 
     width: 75%;
+    display: none!important;
 }
