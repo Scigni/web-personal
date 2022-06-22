@@ -24,8 +24,8 @@ button {
 .home {
     display:grid;
     gap: 1.5rem;
-    align-content:center;
-    justify-items:center;
+    align-content: center;
+    justify-items: center;
 }
 
 .personal {
@@ -48,4 +48,10 @@ button {
 .content { 
     width: 75%;
     display: none!important;
+}
+
+.social-links > .row > .col {
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
