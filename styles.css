@@ -87,7 +87,7 @@ a {
     width:12px;
     background-color: #71d534;
     animation: writer 4s steps(23) forwards,
-               disappear 5s steps(1) forwards;
+               opacityOn 6s steps(1) forwards;
 }
 
 @keyframes writer {
@@ -96,9 +96,31 @@ a {
     }
 }
 
-@keyframes disappear {
+@keyframes disappearWriter {
     to {
         width: 0%;
+    }
+}
+
+.output {
+    animation: opacityOff 6s steps(1) forwards;
+}
+
+@keyframes opacityOn {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes opacityOff {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 /*------------*/
