@@ -40,7 +40,7 @@ function makeVisible(elem) {
 
 function makeInvisibleCurrent(listElem) {
     for (let i = 0; i < listElem.length; i++) {
-        if (listElem[i].style.display === "inherit!important!") {
+        if (listElem[i].style.display == "inherit") {
             listElem[i].style.setProperty("display", "none", "important");
         }
     }
