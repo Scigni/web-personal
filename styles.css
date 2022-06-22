@@ -51,10 +51,57 @@ a {
     width: 70%;
 }
 
-.redirect {
-    color: #6197cd;
+.prompt {
+    color: #FFFFFF;
+    
+}
+.prompt > span:first-child {
+    color: #71d534;
 }
 
+.redirect,
+.prompt > span:nth-child(2) {
+    color: #6197cd;
+}
+/* ANIMATION */
+.command {
+    position: relative;
+}
+
+.command::before,
+.command::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.command::before {
+    background-color: #171010;
+    animation: writer 4s steps(23) forwards;
+}
+
+.command::after {
+    width:12px;
+    background-color: #71d534;
+    animation: writer 4s steps(23) forwards,
+               disappear 5s steps(1) forwards;
+}
+
+@keyframes writer {
+    to { 
+    left: 100%; 
+    }
+}
+
+@keyframes disappear {
+    to {
+        width: 0%;
+    }
+}
+/*------------*/
 .content { 
     width: 80%;
     display: none!important;
