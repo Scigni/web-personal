@@ -38,7 +38,7 @@ button {
 }
 
 .terminal {
-    width: 50%;
+    width: 70%;
 }
 
 .redirect {
@@ -46,12 +46,7 @@ button {
 }
 
 .content { 
-    width: 75%;
+    width: 90%;
     display: none!important;
 }
 
-.social-links > .row > .col {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
