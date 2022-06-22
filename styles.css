@@ -10,9 +10,14 @@
     font-family:monospace!important;
 }
 
+body,
+button,
+a {
+    color:#87805E!important;
+}
+
 body {
     background-color:#362222!important;
-    color:#87805E!important;
 }
 
 button {
@@ -21,7 +26,12 @@ button {
     background-color: inherit;
 }
 
-.home {
+a {
+    text-decoration: none!important;
+}
+
+.home,
+.social-links {
     display:grid;
     gap: 1.5rem;
     align-content: center;
@@ -46,7 +56,11 @@ button {
 }
 
 .content { 
-    width: 90%;
+    width: 80%;
     display: none!important;
 }
 
+.icon {
+    font-size: 4.5rem;
+    font-weight: 300;
+}
