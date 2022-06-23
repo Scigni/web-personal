@@ -1,29 +1,36 @@
-/*
- * Colores:
- * #362222 PRINCIPAL
- * #171010 SECUNDARIO
- * #423F3E TERCIARIO
- * #2B2B2B CUATERNARIO
- */
+
+:root {
+    --main-bg-color: #362222;
+    --font-color: #;
+    --main-prompt-color: #71d534;
+    --sec-prompt-color: #6197cd;
+}
 
 * {
     font-family:monospace!important;
 }
 
-body,
-button,
-a {
-    color:#87805E!important;
-}
 
 body {
-    background-color:#362222!important;
+    background-color:var(--main-bg-color)!important;
+}
+
+button,
+a,
+.icon {
+    color: var(--sec-prompt-color)!important;
 }
 
 button {
     padding: 0;
     border: none;
     background-color: inherit;
+}
+
+h1,
+h2,
+p {
+    color: #FFEF82;
 }
 
 a {
@@ -56,7 +63,7 @@ a {
     
 }
 .prompt > span:first-child {
-    color: #71d534;
+    color: var(--main-prompt-color);
 }
 
 .redirect,
@@ -85,9 +92,9 @@ a {
 
 .command::after {
     width:12px;
-    background-color: #71d534;
+    background-color: var(--main-prompt-color);
     animation: writer 4s steps(23) forwards,
-               opacityOn 6s steps(1) forwards;
+               opacityOn 5s steps(1) forwards;
 }
 
 @keyframes writer {
@@ -96,14 +103,9 @@ a {
     }
 }
 
-@keyframes disappearWriter {
-    to {
-        width: 0%;
-    }
-}
 
 .output {
-    animation: opacityOff 6s steps(1) forwards;
+    animation: opacityOff 5s steps(1) forwards;
 }
 
 @keyframes opacityOn {
@@ -123,10 +125,17 @@ a {
         opacity: 1;
     }
 }
+
+.content-appear {
+    animation: opacityOff 1s normal forwards;
+}
+
 /*------------*/
 .content { 
     width: 80%;
-    display: none!important;
+    position: absolute!important;
+    visibility: hidden;
+    opacity: 0;
 }
 
 .icon {
