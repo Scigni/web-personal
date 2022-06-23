@@ -55,7 +55,8 @@ a {
 }
 
 .terminal {
-    width: 70%;
+    min-width: 75%!important;
+    max-width: 90%!important;
 }
 
 .prompt {
@@ -132,7 +133,8 @@ a {
 
 /*------------*/
 .content { 
-    width: 80%;
+    min-width: 80%!important;
+    max-width: 100%!important;
     position: absolute!important;
     visibility: hidden;
     opacity: 0;
